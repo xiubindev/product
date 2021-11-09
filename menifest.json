@@ -1,0 +1,14 @@
+{
+	"short_name": "ZooZClub",
+	"name": "ZooZClub",
+	"icons": [
+		{
+			"src": "logo512.png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": ".",
+	"display": "fullscreen",
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff"
+}
