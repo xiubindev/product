@@ -13,8 +13,22 @@ export const TitleSection = styled.section`
     position: relative;
     width: 55%;
     display: inline-block;
+    height:443px;
+    @media screen and (min-width:2000px) {
+      height:23vw;
+    }
+  @media screen and (max-width: 1500px) {
+    display: inline-block;
+      height: 30vw;
+    }
+
     @media screen and (max-width: 1024px) {
       width: 100%;
+      height:52vw;
+    }
+    @media screen and (max-width: 568px) {
+      width: 100%;
+      height:62vw;
     }
 
     > .bg_title {
@@ -23,6 +37,7 @@ export const TitleSection = styled.section`
       float: right;
       width: 100%;
       max-width: 1100px;
+      opacity: 0;
 
       @media screen and (max-width: 1024px) {
         width: 115%;
