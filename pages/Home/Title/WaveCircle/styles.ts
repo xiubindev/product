@@ -7,7 +7,9 @@ export const Svg = styled.svg`
   width: 100%;
   height: 100%;
   z-index: -1;
-
+  @media screen and (min-width: 1550px) {
+    right:-280px;
+  }
   @media screen and (max-width: 1024px) {
     top: 0px;
     transform: rotate(180deg) translateX(-50px) scaleX(2);
@@ -17,6 +19,10 @@ export const Svg = styled.svg`
     @media screen and (max-width: 1024px) {
       transform: scale(1.3);
     }
+    
+    @media screen and (min-width: 1550px) {
+    transform: skew(53deg, -27deg) translateX(-314px) translateY(0px) scaleX(1.7) scaleY(0.95);
+  }
   }
 
   .controls {
