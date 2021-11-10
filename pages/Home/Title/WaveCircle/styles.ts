@@ -3,30 +3,38 @@ import styled from '@emotion/styled';
 export const Svg = styled.svg`
   position: absolute;
   top: 0px;
-  right: -70px;
-  width: 100%;
-  height: 100%;
   z-index: -1;
+  width: 54vw;
+  height: 100%;
+  right: -150px;
+  transform: scaleX(1.7) translateY(-42vh);
   @media screen and (min-width:2000px){
-    right: -17vw !important;
+    width:47vw;
+    transform: scaleX(1.6) translateY(-450px);
   }
-  @media screen and (min-width: 1550px) {
-    right:-280px;
+  @media screen and (min-width:2200px){
+    width:51vw;
+  }
+  @media screen and (min-width:2500px){
+    width:40vw;
+    transform: scaleX(1.7) translateY(-450px);
+  }
+  @media screen and (max-width: 1400px) {
+    width:56vw;
   }
   @media screen and (max-width: 1024px) {
-    top: 0px;
-    transform: rotate(180deg) translateX(-50px) scaleX(2);
+    width: 100vw;
+    right:-50px;
+    transform: scaleX(2.5) scaleY(1.2) translateY(-35vh);
   }
-  path {
-    transform: skew(54deg, -40deg) translateX(-110px) translateY(20px) scaleX(1.2);
-    @media screen and (max-width: 1024px) {
-      transform: scale(1.3);
-    }
-    
-    @media screen and (min-width: 1550px) {
-    transform: skew(53deg, -27deg) translateX(-314px) translateY(0px) scaleX(1.7) scaleY(0.95);
+  @media screen and (max-width: 900px) {
+    right:-50px;
+    transform: scaleX(2.2) scaleY(1.2) translateY(-35vh);
   }
+  @media screen and (max-width: 768px) {
+    transform: scaleX(2.2) scaleY(1.2) translateY(-35vh);
   }
+
 
   .controls {
     position: fixed;

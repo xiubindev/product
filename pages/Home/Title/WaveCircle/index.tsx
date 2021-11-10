@@ -18,12 +18,12 @@ const WaveCircle = () => {
   const circleRef = useRef<SVGPathElement>(null);
   const circle = createCircle({
     numPoints: 28,
-    centerX: 420,
-    centerY: 450,
-    minRadius: 400,
-    maxRadius: 450,
+    centerX: 400,
+    centerY: 400,
+    minRadius: 315,
+    maxRadius: 340,
     minDuration: 1,
-    maxDuration: 2,
+    maxDuration: 6,
   });
 
   function createCircle(options: Options) {
@@ -71,7 +71,7 @@ const WaveCircle = () => {
       return;
     }
     if (data.length < 1) return 'M0 0';
-    const tension = 1.5;
+    const tension = 1;
 
     const size = data.length;
     let path = `M${data[0].x} ${data[0].y} C`;

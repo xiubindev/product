@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 export const TitleSection = styled.section`
   display: block;
   margin: 0;
-  position: relative;
   text-align: right;
   @media screen and (max-width: 1024px) {
     margin-bottom: 50vw;
@@ -13,22 +12,22 @@ export const TitleSection = styled.section`
     position: relative;
     width: 55%;
     display: inline-block;
-    height:443px;
+    height:30vh;
     @media screen and (min-width:2000px) {
-      height:23vw;
+      /* height:23vw; */
     }
   @media screen and (max-width: 1500px) {
     display: inline-block;
-      height: 30vw;
+      /* height: 30vw; */
     }
 
     @media screen and (max-width: 1024px) {
       width: 100%;
-      height:52vw;
+      /* height:52vw; */
     }
     @media screen and (max-width: 568px) {
       width: 100%;
-      height:62vw;
+      /* height:62vw; */
     }
 
     > .bg_title {
