@@ -14,6 +14,9 @@ export const TitleSection = styled.section`
     width: 55%;
     display: inline-block;
     height:443px;
+    @media screen and (min-width:2000px) {
+      height:23vw;
+    }
   @media screen and (max-width: 1500px) {
     display: inline-block;
       height: 30vw;

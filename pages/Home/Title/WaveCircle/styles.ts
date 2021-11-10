@@ -7,6 +7,9 @@ export const Svg = styled.svg`
   width: 100%;
   height: 100%;
   z-index: -1;
+  @media screen and (min-width:2000px){
+    right: -17vw !important;
+  }
   @media screen and (min-width: 1550px) {
     right:-280px;
   }
